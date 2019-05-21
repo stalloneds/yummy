@@ -1,0 +1,27 @@
+<br /><br />
+	<div class = "container">
+		<div class = "row">
+			<div clas = "col-6 offset-1">
+				<h2>Add a Restaurant</h2>
+			</div>
+		</div>
+		<div class = "row">
+			<div class = "col-6 offset-1">
+				<br />
+				<p>Feel free to add as many restaurants as you'd like.  You can manage each of the restaurants you add from the profile page.  </p>
+
+				<p>We'll keep you informed via email each time a new comment has been added.</p>   
+			</div>
+		</div>
+		<div class = "row">
+			<div class = "col-6 offset-1">
+				<%= simple_form_for @restaurant do |f| %> 
+				<%= f.input :name %>
+				<%= f.input :address %>
+				<%= f.input :phone %>
+				<%= f.input :description %>
+				<%= f.submit 'Add this Restaurant', class: 'btn btn-primary' %>
+				<% end %>
+			</div>
+		</div>
+	</div>
